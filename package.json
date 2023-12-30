@@ -1,0 +1,33 @@
+{
+  "private": true,
+  "author": "pdd <pdd@cloudcrane.cn>",
+  "scripts": {
+    "dev": "cross-env MODE=local max dev",
+    "dev:prod": "cross-env MODE=prod max dev",
+    "build": "cross-env MODE=local max build",
+    "build:prod": "cross-env MODE=prod max build",
+    "format": "prettier --cache --write .",
+    "prepare": "husky install",
+    "postinstall": "max setup",
+    "setup": "max setup",
+    "start": "npm run dev"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^5.2.6",
+    "@ant-design/pro-components": "^2.6.43",
+    "@umijs/max": "^4.0.90",
+    "antd": "^5.12.5"
+  },
+  "devDependencies": {
+    "@ant-design/pro-layout": "^7.17.16",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "cross-env": "^7.0.3",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.0",
+    "prettier": "^3.1.1",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-packagejson": "^2.4.8",
+    "typescript": "^5.3.3"
+  }
+}
